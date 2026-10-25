@@ -44,8 +44,8 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-8 pb-16">
       {/* Subtle background orbs (non-blocking) */}
-      <motion.div 
-        animate={{ 
+      <motion.div
+        animate={{
           x: [0, 30, 0],
           y: [0, -30, 0],
         }}
@@ -53,8 +53,8 @@ export function Hero() {
         className="absolute top-1/4 right-1/4 w-80 h-80 rounded-full blur-3xl opacity-20 pointer-events-none"
         style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)' }}
       />
-      <motion.div 
-        animate={{ 
+      <motion.div
+        animate={{
           x: [0, -30, 0],
           y: [0, 30, 0],
         }}
@@ -79,7 +79,7 @@ export function Hero() {
             <div className="relative w-72 h-[22rem] mx-auto">
               {/* Soft radial light behind portrait */}
               <motion.div
-                animate={{ 
+                animate={{
                   opacity: [0.5, 0.8, 0.5],
                   scale: [1, 1.08, 1],
                 }}
@@ -91,7 +91,7 @@ export function Hero() {
               />
 
               {/* Gradient Border Container */}
-              <motion.div 
+              <motion.div
                 whileHover={{ scale: 1.015, y: -4 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
                 className="relative w-full h-full rounded-[1.75rem] p-[1.5px] overflow-hidden"
@@ -103,7 +103,9 @@ export function Hero() {
                 {/* Inner Content */}
                 <div className="w-full h-full rounded-[1.65rem] overflow-hidden bg-background relative">
                   <Image
-                    src="/placeholder-user.jpg"
+
+
+                    src="/personal-portfolio-website/placeholder-user.jpg"
                     alt="Jahidul Islam"
                     fill
                     quality={100}
@@ -112,7 +114,7 @@ export function Hero() {
                     priority
                   />
                   {/* Soft top light sheen */}
-                  <div 
+                  <div
                     className="absolute inset-0 pointer-events-none"
                     style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, transparent 30%, transparent 80%, rgba(9,9,11,0.4) 100%)' }}
                   />
@@ -180,7 +182,7 @@ export function Hero() {
               variants={itemVariants}
               className="flex flex-wrap gap-3 pt-2"
             >
-              <motion.span 
+              <motion.span
                 whileHover={{ scale: 1.05 }}
                 className="px-4 py-2 bg-primary/15 border border-primary/40 rounded-full text-sm text-primary font-semibold backdrop-blur-sm hover:border-primary/60 transition-colors"
               >
